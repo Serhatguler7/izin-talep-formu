@@ -1,0 +1,108 @@
+
+TR
+
+
+Proje Adı: Üniversite Çalışan İzin Talep ve Onay Sistemi
+Açıklama:
+Bu proje, bir üniversitenin çalışanlarının izin taleplerini yönetmek ve onay süreçlerini kolaylaştırmak amacıyla geliştirilmiş bir web uygulamasıdır. 
+Sistem, kullanıcıların izin talebi oluşturmasını, yöneticilerin bu talepleri görüntüleyip onaylamasını veya reddetmesini sağlar. 
+Ayrıca, taleplerin durumları hakkında kullanıcıları ve yöneticileri bilgilendiren SMS bildirim sistemi entegre edilmiştir.
+
+Özellikler:
+
+İzin Talep Formu:
+
+Çalışanlar, yıllık izin, akademik izin, ücretsiz izin ve günlük/saatlik izin gibi çeşitli izin tipleri arasından seçim yaparak talep oluşturabilirler.
+İlgili alanlar, seçilen izin tipine göre dinamik olarak doldurulması gereken bilgileri içerir.
+İzin başlangıç ve bitiş tarihleri, izin adresi ve açıklama gibi bilgiler sisteme kaydedilir.
+
+
+Onay Süreci:
+
+Her izin talebi için üç aşamalı onay süreci uygulanır. İlk, ikinci ve üçüncü onaycılar, yetkilerine göre izinleri onaylayabilir veya reddedebilir.
+Onay durumları (beklemede, onaylandı, reddedildi) sistemde kaydedilir ve kullanıcıya gösterilir.
+Üçüncü onaycı aşaması tamamlandığında, izin talebi tamamlanmış kabul edilir ve başvuru sahibi bilgilendirilir.
+SMS Bildirim Sistemi:
+
+Her onay aşaması ve reddetme durumunda, ilgili kişilere SMS ile bilgilendirme yapılır.
+İzin talebi onaylandığında, bir sonraki onaylayıcıya otomatik SMS gönderilir.
+İzin talebi reddedildiğinde ise, başvuru sahibine SMS ile bilgi verilir.
+Kullanıcı Arayüzü:
+
+Kullanıcılar, izin taleplerini, onay durumlarını ve geçmiş taleplerini tablo şeklinde görüntüleyebilir.
+Yöneticiler, izin taleplerini detaylı bir şekilde inceleyebilir ve gerekli onay/ret işlemlerini gerçekleştirebilir.
+Her satıra tıklayarak talep detaylarını içeren bir modal açılabilir ve bu sayede kullanıcı, izinle ilgili tüm bilgilere kolayca ulaşabilir.
+Raporlama ve İzleme:
+
+Yöneticiler, sistemde kayıtlı tüm izin taleplerini filtreleyebilir, onay durumlarını ve detaylarını görüntüleyebilir.
+Kullanıcılar, geçmiş izin taleplerini tablo halinde listeleyebilir ve hangi izin tipinin hangi durumda olduğunu görebilir.
+Kullanılan Teknolojiler:
+PHP ve CodeIgniter: Back-end işlemler ve veritabanı yönetimi için kullanılmıştır.
+JavaScript ve jQuery: Dinamik işlemler, modal açma ve kullanıcı deneyimi iyileştirmeleri için kullanılmıştır.
+MySQL: Veritabanı yönetimi ve veri saklama işlemleri için kullanılmıştır.
+HTML/CSS: Arayüz tasarımı ve stil düzenlemeleri için kullanılmıştır.
+SMS API Entegrasyonu: Talep bildirimlerinin anlık olarak yapılabilmesi için SMS servis sağlayıcısı ile entegrasyon yapılmıştır.
+Kurulum Talimatları:
+
+Proje dosyalarını indirin ve web sunucunuzda uygun bir dizine yükleyin.
+Veritabanını oluşturun ve gerekli tabloları database.sql dosyasından içe aktarın.
+config.php ve database.php dosyalarında veritabanı bağlantı bilgilerinizi girin.
+SMS servis sağlayıcısının API bilgilerini sms_config.php dosyasına ekleyin.
+Uygulamayı tarayıcınızda açarak test edin.
+
+Notlar:
+Proje, kullanıcılar ve yöneticiler arasındaki izin süreçlerini düzenlemek ve onay mekanizmasını hızlandırmak için tasarlanmıştır.
+Kodların ve yapının kullanıcı ihtiyaçlarına göre özelleştirilmesi mümkündür. Daha gelişmiş bir yapı istenirse, öneriler ve iyileştirmeler yapılabilir.
+
+
+
+EN
+
+Project Name: University Employee Leave Request and Approval System
+
+Description: This project is a web application developed to manage and streamline leave requests and approval processes for university employees. The system allows users to create leave requests, and managers can view, approve, or reject these requests. Additionally, an SMS notification system is integrated to inform users and managers about the status of the requests.
+
+Features:
+
+Leave Request Form:
+
+Employees can create requests by choosing from various leave types such as annual leave, academic leave, unpaid leave, and daily/hourly leave.
+The form dynamically adapts the fields required based on the selected leave type.
+Details such as leave start and end dates, leave address, and explanations are recorded in the system.
+Approval Process:
+
+Each leave request follows a three-stage approval process. The first, second, and third approvers can approve or reject the leave based on their authority.
+The approval statuses (pending, approved, rejected) are recorded in the system and displayed to the user.
+Once the third approval stage is complete, the leave request is considered finalized, and the applicant is notified.
+SMS Notification System:
+
+SMS notifications are sent to relevant parties during each approval stage and in case of rejection.
+When a leave request is approved, an SMS is automatically sent to the next approver.
+If a leave request is rejected, the applicant is informed via SMS.
+User Interface:
+
+Users can view their leave requests, approval statuses, and past requests in a table format.
+Managers can review leave requests in detail and perform approval/rejection actions as needed.
+Clicking on each row opens a modal containing detailed information about the request, allowing users to access all relevant details easily.
+Reporting and Tracking:
+
+Managers can filter all leave requests recorded in the system, viewing approval statuses and details.
+Users can list their past leave requests in a table and see the status of each leave type.
+Technologies Used:
+
+PHP and CodeIgniter: Used for back-end processing and database management.
+JavaScript and jQuery: Used for dynamic operations, modal interactions, and improving user experience.
+MySQL: Employed for database management and data storage.
+HTML/CSS: Utilized for UI design and styling.
+SMS API Integration: Integrated with an SMS service provider to send real-time notifications for leave requests.
+Installation Instructions:
+
+Download the project files and upload them to an appropriate directory on your web server.
+Create the database and import the necessary tables from the database.sql file.
+Enter your database connection information in the config.php and database.php files.
+Add the SMS service provider’s API information in the sms_config.php file.
+Open the application in your browser to test it.
+Notes:
+
+The project is designed to streamline the leave process and approval mechanism between users and managers.
+The code and structure can be customized to meet specific user needs. Recommendations and improvements can be made if a more advanced system is required.
